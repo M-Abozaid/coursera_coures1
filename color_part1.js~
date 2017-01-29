@@ -1,0 +1,25 @@
+//var Corder []
+var Clist = ["black" , "blue" , "brown" , "green" , "orange" , "pink" , "purple" , "red" , "white" ,"yellow"  ];
+var random_guess;           
+var user_input;        
+var finished = false;   
+var guesses = 0;
+
+
+function do_game() {
+    var random_number = Math.random() * 10;
+    var random_number_integer = Math.floor(random_number);
+    random_guess = Clist [random_number_integer];
+	
+	
+	 alert("the color is ."+ random_guess);
+    while (!finished) {
+    	
+       user_input = prompt("I am thinking of a Color from this list :- "+
+                                  "black, blue, brown, green, orange, pink, purple, red, white , yellow.\n\n"+
+                                  "What is the Color?");
+        
+        if (random_guess == user_input ){
+        finished true;}
+    }
+}

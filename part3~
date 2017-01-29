@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<header>
+<style>
+
+h1{color: blue;}
+fieldset {border:10px solid yellow;background-color: lightyellow;margin-bottom: 10px ;width: 720px}
+label {width: 180px; display:inline-block ; text-align:right; text-align:top ;}
+#contact {width: auto }
+#gender {width: auto }
+
+label:hover { font-size:40px }
+input:hover { font-size:40px }
+.za {background-color: pink;}
+</style>
+</header>
+<body>
+
+<h1>Please Enter Your Details For Our Website</h1>
+<form action=" https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post">
+<fieldset>
+<legend>your face </legend>
+<label for = "image" autofocus > your image  </label>
+<input type="file" id="image" name="image" required="" autofocus >
+<img id="preview"/> 
+</fieldset>
+
+<fieldset>
+<legend>Your general details</legend>
+<label for = "name" autofocus > Name </label>
+<input type="text" id="name" name="Name" required="" placeholder="Your full name" autofocus ><br>
+<label for = "gender"  > Gender </label>
+<input type="radio" name="Gender" value="male" id="gender" >male
+<input type="radio" name="Gender" value="female" id="gender"  >female <br>
+<label for="age">Age</label>
+<input type="number" name="age" id="age" required=""><br>
+<label for="birth"> Your date of birth</label>
+<input type="date" name="birth" id="birth" required="" ><br>
+<label for="color"> Your favorite color </label>
+<input type="color" name="color" id="color" ><br>
+<label for="country">Your country </label>
+<select name="country" >
+<option  value="EG">Egypt</option> 
+<option  value="US">United States</option> 
+<option  value="SA">South Africa</option> 
+<option  value="SU">Sudan</option> 
+<option  value="IT">Italy</option> 
+<option  value="Fr">France</option>
+ </select>
+</fieldset>
+
+<fieldset>
+<legend>Your indicators</legend>
+<label for="Height">Height:</label>
+Short <input type="range" name="height" id="Height" min="0"max="100" step="1">tall<br>
+<label for="salary">salary:</label>
+Poor <input type="range" name="height" id="Height" min="0"max="100" step="1">Rich
+</fieldset>
+
+<fieldset>
+<legend>Your Contact Information</legend>
+<label for="email">Email :</label>
+<input type="email" name="email" id="email" required=""><br>
+<label for="mobile">Mobile:</label>
+<input type="tel" name="mobile" id="mobile" ><br>
+<label for="address">Address:</label>
+<textarea name="address" rows="5" cols="70" id="address"></textarea><br>
+<label for="contact">Contact Method:</label>
+<input type="checkbox" name="cmethod" value="email" id="contact">Email
+<input type="checkbox" name="cmethod" value="Whatsapp" id="contact">Whatsapp
+<input type="checkbox" name="cmethod" value="email" id="in-app chat">in-app chat
+</fieldset>
+
+<input type="submit" value="submit">
+</form>
+
+
+<script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+
+</body>
+
+
+</html>
